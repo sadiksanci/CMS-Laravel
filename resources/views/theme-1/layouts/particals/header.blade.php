@@ -2,11 +2,11 @@
 <header class="header-three header--sticky">
     <div class="container">
         <div class="row header-top-three">
-            <div class="col-lg-6">
-                <p class="top-left"> <a href="{{route('contact')}}">Bize Ulaşın <i
+            <div class="col-lg-5">
+                <p class="top-left"> <a href="{{route('contact')}}">@lang('header.contact us')<i
                             class="far fa-mail-bulk"></i></a></p>
             </div>
-            <div class="col-lg-6 right-h-three">
+            <div class="col-lg-7 right-h-three">
                 <div class="header-top-right">
                     <div class="single-right email">
                         <i class="fas fa-envelope"></i>
@@ -14,10 +14,18 @@
                     </div>
                     <div class="single-right call">
                         <i class="far fa-phone-volume"></i>
-                        <span>Telefon:</span>
+                        <span>@lang('header.phone'):</span>
                         <a href="#">+210-9856988</a>
                     </div>
+                    <div class="dropdown">
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example" onchange="changeLang(this)">
+                            <option value="{{\Illuminate\Support\Facades\App::getLocale()}}" selected>{{strtoupper(\Illuminate\Support\Facades\App::getLocale())}}</option>
+                            <option @if(\Illuminate\Support\Facades\App::getLocale() == "en") disabled @endif value="en">En</option>
+                            <option @if(\Illuminate\Support\Facades\App::getLocale() == "tr") disabled @endif value="tr">Tr</option>
+                        </select>
+                    </div>
                 </div>
+
             </div>
         </div>
         <div class="row main-header main-header-three">
@@ -30,11 +38,11 @@
                 <div class="text-center d-flex justify-content-center">
                     <nav class="nav-main mainmenu-nav d-none d-xl-block">
                         <ul class="mainmenu">
-                            <li><a class="nav-item" href="{{route('index')}}">Anasayfa</a></li>
-                            <li><a class="nav-item" href="{{route('services')}}">Hizmetler</a></li>
-                            <li><a class="nav-item" href="{{route('blog')}}">Blog</a></li>
-                            <li><a class="nav-item" href="{{route('about.us')}}">Hakkımızda</a></li>
-                            <li><a class="nav-item" href="{{route('contact')}}">İletişim</a></li>
+                            <li><a class="nav-item" href="{{route('index')}}">@lang('header.home')</a></li>
+                            <li><a class="nav-item" href="{{route('services')}}">@lang('header.services')</a></li>
+                            <li><a class="nav-item" href="{{route('blog')}}">@lang('header.blog')</a></li>
+                            <li><a class="nav-item" href="{{route('about.us')}}">@lang('header.about')</a></li>
+                            <li><a class="nav-item" href="{{route('contact')}}">@lang('header.contact')</a></li>
                         </ul>
                     </nav>
                 </div>

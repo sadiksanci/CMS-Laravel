@@ -16,3 +16,7 @@ Route::get('/services/details',[ServiceController::class,'serviceDetail'])->name
 
 Route::get('/blog',[BlogController::class,'getBlog'])->name('blog');
 Route::get('/blog/details',[BlogController::class,'blogDetail'])->name('blog.details');
+
+
+
+Route::post('/change-language',[HomeController::class,'changeLang'])->name('change.lang');
