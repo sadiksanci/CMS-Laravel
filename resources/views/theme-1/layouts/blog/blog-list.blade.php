@@ -7,13 +7,13 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
-                    <h1 class="title">Latest Posts</h1>
+                    <h1 class="title">@lang('blog.latest posts')/h1>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="bread-tag">
-                        <a href="index-2.html">Home</a>
+                        <a href="index-2.html">@lang('blog.home')</a>
                         <span> / </span>
-                        <a href="#" class="active">Latest Posts</a>
+                        <a href="#" class="active">@lang('blog.latest posts')</a>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                     <!-- single post -->
                     <div class="blog-single-post-listing">
                         <div class="thumbnail">
-                            <img src="assets/images/blog/blog-lg-1.jpg" alt="Business-Blog">
+                            <img src="{{asset("assets/images/blog/blog-lg-1.jpg")}}" alt="Business-Blog">
                         </div>
                         <div class="blog-listing-content">
                             <div class="user-info">
@@ -53,7 +53,7 @@
                                 </div>
                                 <!-- single info end -->
                             </div>
-                            <a class="blog-title" href="blog-details.html">
+                            <a class="blog-title" href="{{route('blog.details')}}">
                                 <h3 class="title">Profitable business makes your profit</h3>
                             </a>
                             <p class="disc">
@@ -61,14 +61,14 @@
                                 globally initiate multidisciplinary compatible architectures pidiously repurpose leading
                                 edge growth strategies with just in time web readiness communicate timely meta services
                             </p>
-                            <a class="rts-btn btn-primary" href="blog-details.html">Read Details</a>
+                            <a class="rts-btn btn-primary" href="{{route('blog.details')}}">Read Details</a>
                         </div>
                     </div>
                     <!-- single post End-->
                     <!-- single post -->
                     <div class="blog-single-post-listing">
                         <div class="thumbnail">
-                            <img src="assets/images/blog/blog-lg-2.jpg" alt="Business-Blog">
+                            <img src="{{asset("assets/images/blog/blog-lg-2.jpg")}}" alt="Business-Blog">
                         </div>
                         <div class="blog-listing-content">
                             <div class="user-info">
@@ -91,7 +91,7 @@
                                 </div>
                                 <!-- single info end -->
                             </div>
-                            <a class="blog-title" href="blog-details.html">
+                            <a class="blog-title" href="{{route('blog.details')}}">
                                 <h3 class="title">Profitable business makes your profit</h3>
                             </a>
                             <p class="disc">
@@ -99,7 +99,7 @@
                                 globally initiate multidisciplinary compatible architectures pidiously repurpose leading
                                 edge growth strategies with just in time web readiness communicate timely meta services
                             </p>
-                            <a class="rts-btn btn-primary" href="blog-details.html">Read Details</a>
+                            <a class="rts-btn btn-primary" href="{{route('blog.details')}}">Read Details</a>
                         </div>
                     </div>
                     <!-- single post End-->
@@ -129,7 +129,7 @@
                                 </div>
                                 <!-- single info end -->
                             </div>
-                            <a class="blog-title" href="blog-details.html">
+                            <a class="blog-title" href="{{route('blog.details')}}">
                                 <h3 class="title">Profitable business makes your profit</h3>
                             </a>
                             <p class="disc">
@@ -137,7 +137,7 @@
                                 globally initiate multidisciplinary compatible architectures pidiously repurpose leading
                                 edge growth strategies with just in time web readiness communicate timely meta services
                             </p>
-                            <a class="rts-btn btn-primary" href="blog-details.html">Read Details</a>
+                            <a class="rts-btn btn-primary" href="{{route('blog.details')}}">Read Details</a>
                         </div>
                     </div>
                     <!-- single post End-->
@@ -167,7 +167,7 @@
                                 </div>
                                 <!-- single info end -->
                             </div>
-                            <a class="blog-title" href="blog-details.html">
+                            <a class="blog-title" href="{{route('blog.details')}}">
                                 <h3 class="title">Profitable business makes your profit</h3>
                             </a>
                             <p class="disc">
@@ -175,7 +175,7 @@
                                 globally initiate multidisciplinary compatible architectures pidiously repurpose leading
                                 edge growth strategies with just in time web readiness communicate timely meta services
                             </p>
-                            <a class="rts-btn btn-primary" href="blog-details.html">Read Details</a>
+                            <a class="rts-btn btn-primary" href="{{route('blog.details')}}">Read Details</a>
                         </div>
                     </div>
                     <!-- single post End-->
@@ -202,7 +202,7 @@
                     <div class="rts-single-wized search">
                         <div class="wized-header">
                             <h5 class="title">
-                                Search Hear
+                               @lang("blog.search hear")
                             </h5>
                         </div>
                         <div class="wized-body">
@@ -217,7 +217,7 @@
                     <div class="rts-single-wized Categories">
                         <div class="wized-header">
                             <h5 class="title">
-                                Categories
+                                @lang('blog.categories')
                             </h5>
                         </div>
                         <div class="wized-body">
@@ -253,7 +253,7 @@
                     <div class="rts-single-wized Recent-post">
                         <div class="wized-header">
                             <h5 class="title">
-                                Recent Posts
+                                @lang('blog.recent posts')
                             </h5>
                         </div>
                         <div class="wized-body">
@@ -323,35 +323,10 @@
                             <!-- recent-post End -->
                         </div>
                     </div>
-                    <!-- single wized End -->
-                    <!-- single wized start -->
-                    <div class="rts-single-wized Recent-post">
-                        <div class="wized-header">
-                            <h5 class="title">
-                                Recent Posts
-                            </h5>
-                        </div>
-                        <div class="wized-body">
-                            <div class="gallery-inner">
-                                <div class="row-1 single-row">
-                                    <a href="#"><img src="assets/images/blog/details/gallery/01.png" alt="Gallery"></a>
-                                    <a href="#"><img src="assets/images/blog/details/gallery/02.png" alt="Gallery"></a>
-                                    <a href="#"><img src="assets/images/blog/details/gallery/03.png" alt="Gallery"></a>
-                                </div>
-                                <div class="row-2 single-row">
-                                    <a href="#"><img src="assets/images/blog/details/gallery/04.png" alt="Gallery"></a>
-                                    <a href="#"><img src="assets/images/blog/details/gallery/05.png" alt="Gallery"></a>
-                                    <a href="#"><img src="assets/images/blog/details/gallery/06.png" alt="Gallery"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single wized End -->
-                    <!-- single wized start -->
                     <div class="rts-single-wized">
                         <div class="wized-header">
                             <h5 class="title">
-                                Popular Tags
+                                @lang('blog.popular tags')
                             </h5>
                         </div>
                         <div class="wized-body">
@@ -368,19 +343,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- single wized End -->
-                    <!-- single wized start -->
-                    <div class="rts-single-wized contact">
-                        <div class="wized-header">
-                            <a href="#"><img src="assets/images/logo/logo-2.svg" alt="Business_logo"></a>
-                        </div>
-                        <div class="wized-body">
-                            <h5 class="title">Need Help? We Are Here
-                                To Help You</h5>
-                            <a class="rts-btn btn-primary" href="contactus.html">Contact Us</a>
-                        </div>
-                    </div>
-                    <!-- single wized End -->
                 </div>
                 <!-- rts- blog wized end area -->
             </div>

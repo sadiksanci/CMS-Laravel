@@ -7,13 +7,13 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
-                    <h1 class="title">Service Details</h1>
+                    <h1 class="title">@lang('services.service details')</h1>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="bread-tag">
-                        <a href="/">Home</a>
+                        <a href="/">@lang('services.home')</a>
                         <span> / </span>
-                        <a href="#" class="active">Service Details</a>
+                        <a href="#" class="active">@lang('services.service details')</a>
                     </div>
                 </div>
             </div>
@@ -199,7 +199,7 @@
                     <div class="rts-single-wized Categories service">
                         <div class="wized-header">
                             <h5 class="title">
-                                Categories
+                                @lang('services.categories')
                             </h5>
                         </div>
                         <div class="wized-body">
@@ -230,52 +230,6 @@
                             <!-- single categoris End -->
                         </div>
                     </div>
-                    <!-- single wizered End -->
-                    <!-- single wizered start -->
-                    <div class="rts-single-wized download service">
-                        <div class="wized-header">
-                            <h5 class="title">Download</h5>
-                        </div>
-                        <div class="wized-body">
-                            <!-- single downlaod area start -->
-                            <div class="single-download-area">
-                                <img src={{asset("assets/images/service/icon/07.svg")}} alt="Business_downlaod">
-                                <div class="mid">
-                                    <h6 class="title">
-                                        Our Brochures
-                                    </h6>
-                                    <span>Downlaod</span>
-                                </div>
-                                <a class=" rts-btn btn-primary" href="#"><i class="fal fa-arrow-right"></i></a>
-                            </div>
-                            <!-- single downlaod area End -->
-                            <!-- single downlaod area start -->
-                            <div class="single-download-area">
-                                <img src={{asset("assets/images/service/icon/08.svg")}} alt="Business_downlaod">
-                                <div class="mid">
-                                    <h6 class="title">
-                                        Company Details
-                                    </h6>
-                                    <span>Downlaod</span>
-                                </div>
-                                <a class=" rts-btn btn-primary" href="#"><i class="fal fa-arrow-right"></i></a>
-                            </div>
-                            <!-- single downlaod area End -->
-                        </div>
-                    </div>
-                    <!-- single wizered End -->
-                    <!-- single wizered start -->
-                    <div class="rts-single-wized contact service">
-                        <div class="wized-header">
-                            <a href="#"><img src={{asset("assets/images/logo/logo-2.svg")}} alt="Business_logo"></a>
-                        </div>
-                        <div class="wized-body">
-                            <h5 class="title">Need Help? We Are Here
-                                To Help You</h5>
-                            <a class="rts-btn btn-primary" href="{{route('contact')}}">Contact Us</a>
-                        </div>
-                    </div>
-                    <!-- single wizered End -->
                 </div>
                 <!-- rts- blog wizered end area -->
             </div>
